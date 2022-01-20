@@ -3,14 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../../layout/custom_preview.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-v24/desgin_spinner_course_up.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/desgin_spinner_course.xml" value="0.2548717948717949" />
+        <entry key="app/src/main/res/drawable/desgin_spinner_course_down.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_baseline_report_gmailerrorred_24.xml" value="0.2548717948717949" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/fragment_course.xml" value="0.11803444782168186" />
+        <entry key="app/src/main/res/layout/fragment__register__course1_fragment.xml" value="0.13541666666666666" />
+        <entry key="app/src/main/res/layout/fragment__register_fragment.xml" value="0.13541666666666666" />
+        <entry key="app/src/main/res/layout/fragment_course.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_maps.xml" value="0.15307971014492755" />
         <entry key="app/src/main/res/layout/fragment_news.xml" value="0.15307971014492755" />
+        <entry key="app/src/main/res/layout/fragment_register_course.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_social.xml" value="0.15307971014492755" />
+        <entry key="app/src/main/res/layout/fragment_view_course.xml" value="0.1109375" />
         <entry key="app/src/main/res/layout/item_menu.xml" value="0.11803444782168186" />
         <entry key="app/src/main/res/layout/item_menu_listview.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/item_spinner_course.xml" value="0.25" />
         <entry key="app/src/main/res/layout/layout_toolbar.xml" value="0.335" />
+        <entry key="app/src/main/res/menu/bottom_menu_course.xml" value="0.24270833333333333" />
       </map>
     </option>
   </component>

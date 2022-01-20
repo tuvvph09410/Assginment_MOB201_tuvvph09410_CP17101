@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 // khi nằm ở fragment nào hiện background khác màu
                 try {
-                    for (int positon = 0; positon <= lvItemMenu.getChildCount(); positon++) {
+                    for (int positon = 0; positon < lvItemMenu.getChildCount(); positon++) {
                         if (positon == i) {
                             lvItemMenu.getChildAt(positon).setBackgroundColor(Color.parseColor("#767dff"));
                         } else {

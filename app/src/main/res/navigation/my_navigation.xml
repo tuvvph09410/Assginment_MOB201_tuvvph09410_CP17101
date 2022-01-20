@@ -9,7 +9,14 @@
         android:id="@+id/fragment_Course"
         android:name="com.example.assginment_mob201.Fragment.Fragment_Course"
         android:label="fragment_course"
-        tools:layout="@layout/fragment_course" />
+        tools:layout="@layout/fragment_course" >
+        <action
+            android:id="@+id/action_fragment_Course_to_fragment_Register_Course"
+            app:destination="@id/fragment_Register_Course" />
+        <action
+            android:id="@+id/action_fragment_Course_to_fragment_View_Course"
+            app:destination="@id/fragment_View_Course" />
+    </fragment>
     <fragment
         android:id="@+id/fragment_Maps"
         android:name="com.example.assginment_mob201.Fragment.Fragment_Maps"
@@ -25,4 +32,14 @@
         android:name="com.example.assginment_mob201.Fragment.Fragment_Social"
         android:label="fragment_social"
         tools:layout="@layout/fragment_social" />
+    <fragment
+        android:id="@+id/fragment_Register_Course"
+        android:name="com.example.assginment_mob201.Fragment.Fragment_Register_Course"
+        android:label="fragment_register_course"
+        tools:layout="@layout/fragment_register_course" />
+    <fragment
+        android:id="@+id/fragment_View_Course"
+        android:name="com.example.assginment_mob201.Fragment.Fragment_View_Course"
+        android:label="fragment_view_course"
+        tools:layout="@layout/fragment_view_course" />
 </navigation>

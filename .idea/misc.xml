@@ -19,6 +19,7 @@
         <entry key="app/src/main/res/layout/fragment_view_course.xml" value="0.1109375" />
         <entry key="app/src/main/res/layout/item_menu.xml" value="0.11803444782168186" />
         <entry key="app/src/main/res/layout/item_menu_listview.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/item_recyclerview_course_adapter.xml" value="0.25" />
         <entry key="app/src/main/res/layout/item_spinner_course.xml" value="0.25" />
         <entry key="app/src/main/res/layout/layout_toolbar.xml" value="0.335" />
         <entry key="app/src/main/res/menu/bottom_menu_course.xml" value="0.24270833333333333" />

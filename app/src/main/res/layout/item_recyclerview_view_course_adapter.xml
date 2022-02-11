@@ -89,10 +89,10 @@
                     android:textColor="#C82125" />
 
                 <Button
-                    android:id="@+id/btn_register"
+                    android:id="@+id/btn_cancelRegister"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Đăng ký khoá học" />
+                    android:text="Huỷ đăng ký khoá học" />
 
             </LinearLayout>
 

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="#03A9F4"
+        android:gravity="center">
+
+        <TextView
+            android:layout_margin="5dp"
+            android:id="@+id/tv_dialogTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Android Nâng Cao"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_dialogDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Từ ngày 20/10/2012 đến ngày 20/11/2014" />
+
+    <TextView
+        android:id="@+id/tv_dialogCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="1,200,000đ"
+        android:textColor="#C82125" />
+
+    <Button
+        android:id="@+id/btn_dialogCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Đóng" />
+
+</LinearLayout>

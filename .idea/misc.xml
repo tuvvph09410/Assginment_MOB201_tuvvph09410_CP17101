@@ -9,6 +9,7 @@
         <entry key="app/src/main/res/drawable/desgin_spinner_course_down.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_baseline_report_gmailerrorred_24.xml" value="0.2548717948717949" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/detail_dialog_course.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment__register__course1_fragment.xml" value="0.13541666666666666" />
         <entry key="app/src/main/res/layout/fragment__register_fragment.xml" value="0.13541666666666666" />
         <entry key="app/src/main/res/layout/fragment_course.xml" value="0.25" />
@@ -19,7 +20,8 @@
         <entry key="app/src/main/res/layout/fragment_view_course.xml" value="0.1109375" />
         <entry key="app/src/main/res/layout/item_menu.xml" value="0.11803444782168186" />
         <entry key="app/src/main/res/layout/item_menu_listview.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/item_recyclerview_course_adapter.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/item_recyclerview_course_adapter.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/item_recyclerview_view_course_adapter.xml" value="0.14855072463768115" />
         <entry key="app/src/main/res/layout/item_spinner_course.xml" value="0.25" />
         <entry key="app/src/main/res/layout/layout_toolbar.xml" value="0.335" />
         <entry key="app/src/main/res/menu/bottom_menu_course.xml" value="0.24270833333333333" />

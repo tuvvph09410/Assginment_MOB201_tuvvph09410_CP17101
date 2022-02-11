@@ -20,26 +20,25 @@ import com.squareup.picasso.Picasso;
 import java.text.DecimalFormat;
 import java.util.List;
 
-public class RecyclerViewCourseApdater extends RecyclerView.Adapter<RecyclerViewCourseApdater.ViewHolder> {
+public class RecyclerViewViewCourseAdapter extends RecyclerView.Adapter<RecyclerViewViewCourseAdapter.ViewHolder> {
     private LayoutInflater inflater;
     private List<Course> courseList;
-
-    public static ItemClickListener itemInsertClickListener;
+    public static ItemClickListener itemDeleteClickListener;
     public static ItemClickListener itemViewClickListener;
 
-    public void setOnItemViewClickListener(ItemClickListener itemClickListener) {
-        RecyclerViewCourseApdater.itemViewClickListener = itemClickListener;
+    public void setItemViewClickListener(ItemClickListener itemClickListener) {
+        RecyclerViewViewCourseAdapter.itemViewClickListener = itemClickListener;
     }
 
-    public void setOnItemInsertClickListener(ItemClickListener onItemInsertClickListener) {
-        RecyclerViewCourseApdater.itemInsertClickListener = onItemInsertClickListener;
+    public void setOnItemDeleteClickListener(ItemClickListener itemClickListener) {
+        RecyclerViewViewCourseAdapter.itemDeleteClickListener = itemClickListener;
     }
 
-    public RecyclerViewCourseApdater(Context context) {
+    public RecyclerViewViewCourseAdapter(Context context) {
         this.inflater = LayoutInflater.from(context);
     }
 
-    public void setList(List<Course> courseList) {
+    public void setCourseList(List<Course> courseList) {
         this.courseList = courseList;
         notifyDataSetChanged();
     }
@@ -47,7 +46,7 @@ public class RecyclerViewCourseApdater extends RecyclerView.Adapter<RecyclerView
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = inflater.inflate(R.layout.item_recyclerview_course_adapter, parent, false);
+        View view = inflater.inflate(R.layout.item_recyclerview_view_course_adapter, parent, false);
         return new ViewHolder(view);
     }
 
@@ -61,11 +60,12 @@ public class RecyclerViewCourseApdater extends RecyclerView.Adapter<RecyclerView
             holder.tvToDate.setText(course.getToDate());
             holder.tvFromDate.setText(course.getFromDate());
             holder.tvCost.setText(decimalFormat.format(course.getCost()) + "đ");
-            holder.btnRegister.setOnClickListener(new View.OnClickListener() {
+            holder.btnCancelRegister.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    if (itemInsertClickListener != null) {
-                        itemInsertClickListener.onItemClick(position);
+                    if (itemDeleteClickListener != null) {
+                        itemDeleteClickListener.onItemClick(position);
+                        Toast.makeText(inflater.getContext(), "Huỷ đăng ký thành công", Toast.LENGTH_LONG).show();
                     }
 
                 }
@@ -79,6 +79,7 @@ public class RecyclerViewCourseApdater extends RecyclerView.Adapter<RecyclerView
                 }
             });
         }
+
     }
 
     @Override
@@ -89,11 +90,17 @@ public class RecyclerViewCourseApdater extends RecyclerView.Adapter<RecyclerView
         return this.courseList.size();
     }
 
+    public Course getItem(int position) {
+        if (this.courseList == null || position >= this.courseList.size()) {
+            return null;
+        }
+        return this.courseList.get(position);
+    }
+
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView tvTitle, tvToDate, tvFromDate, tvCost;
-        Button btnRegister;
+        Button btnCancelRegister;
         ImageView imageView;
-
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -101,9 +108,8 @@ public class RecyclerViewCourseApdater extends RecyclerView.Adapter<RecyclerView
             tvToDate = itemView.findViewById(R.id.tv_toDate);
             tvFromDate = itemView.findViewById(R.id.tv_fromDate);
             tvCost = itemView.findViewById(R.id.tv_cost);
-            btnRegister = itemView.findViewById(R.id.btn_register);
+            btnCancelRegister = itemView.findViewById(R.id.btn_cancelRegister);
             imageView = itemView.findViewById(R.id.iv_imageCourse);
         }
-
     }
 }

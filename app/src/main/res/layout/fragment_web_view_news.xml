@@ -3,12 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment.Fragment_News">
+    tools:context=".Fragment.Fragment_WebView_News">
 
-    <ListView
-        android:id="@+id/lv_news"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="5dp" />
+   <WebView
+       android:id="@+id/wv_news"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
 
 </FrameLayout>

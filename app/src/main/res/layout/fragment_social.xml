@@ -5,10 +5,22 @@
     android:layout_height="match_parent"
     tools:context=".Fragment.Fragment_Social">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Social" />
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/button_facebook"
+            style="@style/FacebookLoginButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+
+            android:text="Tiếp tục với facebook"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
 
 </FrameLayout>

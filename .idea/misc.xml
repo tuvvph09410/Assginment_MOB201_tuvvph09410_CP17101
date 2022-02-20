@@ -4,9 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../../layout/custom_preview.xml" value="0.1" />
+        <entry key="../../../.gradle/caches/transforms-3/b3887aec6dbbd7e17655a2284e936d42/transformed/jetified-facebook-common-12.3.0/res/drawable/com_facebook_auth_dialog_background.xml" value="0.189" />
         <entry key="app/src/main/res/drawable-v24/desgin_spinner_course_up.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/bg_button_facebook.xml" value="0.2215" />
         <entry key="app/src/main/res/drawable/desgin_spinner_course.xml" value="0.2548717948717949" />
         <entry key="app/src/main/res/drawable/desgin_spinner_course_down.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_baseline_arrow_drop_up_24.xml" value="0.189" />
         <entry key="app/src/main/res/drawable/ic_baseline_report_gmailerrorred_24.xml" value="0.2548717948717949" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/detail_dialog_course.xml" value="0.25" />
@@ -16,7 +19,7 @@
         <entry key="app/src/main/res/layout/fragment_maps.xml" value="0.15307971014492755" />
         <entry key="app/src/main/res/layout/fragment_news.xml" value="0.15307971014492755" />
         <entry key="app/src/main/res/layout/fragment_register_course.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/fragment_social.xml" value="0.15307971014492755" />
+        <entry key="app/src/main/res/layout/fragment_social.xml" value="0.335" />
         <entry key="app/src/main/res/layout/fragment_view_course.xml" value="0.1109375" />
         <entry key="app/src/main/res/layout/fragment_web_view_news.xml" value="0.1" />
         <entry key="app/src/main/res/layout/item_listview_news.xml" value="0.335" />
